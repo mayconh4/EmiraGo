@@ -1,0 +1,62 @@
+/* Estilo adaptado para compatibilidade máxima com Next.js Turbopack + Tailwind v4 */
+@import "tailwindcss";
+
+@theme {
+  --color-background: #FFFFFF;
+  --color-foreground: #1D1D1F;
+  --color-apple-gray: #F5F5F7;
+  --color-apple-blue: #0071E3;
+  
+  --radius-apple: 12px;
+  
+  --shadow-apple: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-apple-hover: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+
+  --font-sans: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #1D1D1F;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-apple {
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-apple-primary {
+  background-color: #1D1D1F;
+  color: #FFFFFF;
+}
+
+.btn-apple-primary:hover {
+  background-color: #000000;
+}
+
+.btn-apple-secondary {
+  background-color: #F5F5F7;
+  color: #1D1D1F;
+}
+
+.btn-apple-secondary:hover {
+  background-color: #E8E8ED;
+}
